@@ -1,0 +1,154 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: white
+}
+
+a {
+  /*color: #00B7FF; */
+  color: black;
+  margin: auto;
+  text-decoration: none;
+}
+
+img {
+  width: 100px;
+  text-decoration: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  padding-bottom: 10px;
+}
+
+.picture {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin: auto;
+  font-weight: bold;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.title-picture {
+  height: 100px;
+  width: 300px;
+}
+.title-picture-small {
+  height: 50px;
+  width: 300px;
+}
+footer {
+  text-align: center;
+  color:  #3399ff;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-logo {
+  height: 40px;
+}
+.space {
+  flex-grow: 1;
+}
+
+.links {
+  padding: 10px;
+}
+
+.picture-Album {
+  height: 200px;
+  width: 200px;
+  display: block;
+}
+
+#nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   height: 5vh; 
+  /* background-color: #d83900; */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 60% 40% ;
+  margin: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  padding-bottom: 10px;
+}
+
+.albums {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.tier-picture {
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: auto;
+}
+
+.tiers {
+  display: grid;
+  grid-template-columns: 15% 85%
+}
+.rank {
+  height: 53px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.tier-rank {
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+#stier {
+  background-color: #ff5949;
+}
+
+#atier {
+  background-color: #ffa963;
+}
+
+#btier {
+  background-color: #fcd15a;
+}
+
+#ctier {
+  background-color: #6dff88;
+}
+
+#dtier {
+  background-color: #6dd8ff;
+}
+
+#etier {
+  background-color: #b48eff;
+}
+
+#ftier {
+  background-color: #ee8eff;
+}

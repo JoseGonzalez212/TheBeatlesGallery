@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  a(href="/")
+    h1 The Beatles Gallery
+  img(class="picture-Album" src=image)
+  h2= title
+  h2= year
+  ul 
+    each song in songs
+        li
+            each title, index in song
+                span 
+                span=title 
+                if index == 0
+                    span  -
+

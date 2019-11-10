@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    h1 Tier List
+
+    .container
+        .tiers
+            .ranks
+                div(id="stier" class="rank")
+                    h3 S
+                div(id="atier" class="rank")
+                    p A
+                .div(id="btier" class="rank")
+                    p B
+                div(id="ctier" class="rank")
+                    p C
+                div(id="dtier" class="rank")
+                    p D
+                div(id="etier" class="rank")
+                    p E
+                div(id="ftier" class="rank")
+                    p F
+            .rank-area
+                div(class="tier-rank" ondrop="drop(event)" ondragover="allowDrop(event)")
+                div(class="tier-rank" ondrop="drop(event)" ondragover="allowDrop(event)")
+                div(class="tier-rank" ondrop="drop(event)" ondragover="allowDrop(event)")
+                div(class="tier-rank" ondrop="drop(event)" ondragover="allowDrop(event)")
+                div(class="tier-rank" ondrop="drop(event)" ondragover="allowDrop(event)")
+                div(class="tier-rank" ondrop="drop(event)" ondragover="allowDrop(event)")
+                div(class="tier-rank" ondrop="drop(event)" ondragover="allowDrop(event)")
+
+        .albums
+            each Album, index in Albums
+                img(id=Album.title class="tier-picture" src=Album.image draggable="true" ondragstart="drag(event)" )
+
+    

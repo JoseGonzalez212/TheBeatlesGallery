@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  .title
+    <a href="https://fontmeme.com/the-beatles-font/"><img class="title-picture" src="https://fontmeme.com/permalink/190525/956cdb410514c50fcf3768bf662b2233.png" alt="the-beatles-font" border="0"></a>
+    <a href="https://fontmeme.com/the-beatles-font/"><img class="title-picture-small" src="https://fontmeme.com/permalink/190525/a0c414266235ffb82dc80899eddf17fb.png" alt="the-beatles-font" border="0"></a>
+  div(class='gallery') 
+    each Album, index in Albums
+      a(href=`/album/${index}`)
+        img(class="picture" src=Album.image)
+        p= Album.title
+
+  a(href='/album') Get Random Album
